@@ -1,0 +1,6 @@
+{%if error == 'no_folder'%}<h1>Error - folder "{{current_folder_path}}" does not exist</h1>
+{%else%}
+{% if error == 'no_file'%}<h1>Error - file {{open_file}} does not exist in {{current_folder.name}}</h1>
+{%else%}<h1>Error - unspecified error </h1>
+{%endif%}
+{%endif%}
